@@ -13,3 +13,45 @@ button:hover{
 h1{
     height: -100vh;
 }
+body{
+background-color:whitesmoke;
+justify-content: center;
+align-items: center;
+height: 1vh;
+
+}
+h1,h2,p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+fieldset{
+    text-align: center;
+    align-items: center;
+    padding:0vh;
+    border-radius: 10vh;
+}
+.logo img {
+    text-align: center;
+    display: block;
+    width: 120px;
+    margin: 20px auto ;
+    animation: slideDown 2s ease;
+}
+@keyframes slideDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+       to {
+            transform: translateY(0);
+        opacity: 1;
+    }
+      }
+    }
+.button{
+    text-align: center;
+}
+button:hover{
+    background-color: blue;
+}

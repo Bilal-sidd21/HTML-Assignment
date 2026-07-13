@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admisssion Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+       <div class="logo">
+         <img src="BZU-Multan.png" alt="University Logo" width="120" >
+     </div>
+        <h1>Bahauddin Zakariya University</h1>
+        <h2>University Admission form</h2>
+    <p><strong> Please fill in the application form carefully.</strong></p>
+    </header>
+    <form>
+  <fieldset>
+       <legend><b>Personal Information</b></legend>
+       <label>Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+      <br><br>
+
+        <label>Father's Name:</label>
+        <input type="text" id="fathername" name="fathername" required>
+
+     <br><br>
+         <label>Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <input type="radio" id="other" name="gender" value="Other"> Other
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               pattern="[0-9]{11}"
+               placeholder="03XXXXXXXXX"
+               required>
+
+    </fieldset>
+    <br>
+<fieldset>
+
+    <legend><b>Contact Information</b></legend>
+
+    <label>Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="30" required></textarea>
+
+    <br><br>
+
+    <label>City:</label>
+    <input list="cities" id="city" name="city" required>
+
+    <datalist id="cities">
+        <option value="Lahore">
+        <option value="Karachi">
+        <option value="Islamabad">
+        <option value="Multan">
+        <option value="Faisalabad">
+        <option value="Peshawar">
+    </datalist>
+
+</fieldset>
+<br>
+<fieldset>
+
+    <legend><b>Academic Information</b></legend>
+
+    <label>Select Program:</label>
+
+    <select id="program" name="program" required>
+        <option value="">-- Select Program --</option>
+        <option value="BSCS">BS Computer Science</option>
+        <option value="BSIT">BS Information Technology</option>
+        <option value="BBA">Bachelor of Business Administration</option>
+        <option value="BSE">BS Software Engineering</option>
+        <option value="BCom">Bachelor of Commerce</option>
+    </select>
+
+    <br><br>
+
+    <label>Previous Qualification:</label>
+    <input type="text" id="qualification" name="qualification" required>
+
+    <br><br>
+
+    <label>Marks / Percentage:</label>
+    <input type="number" id="marks" name="marks" min="0" max="100" required>
+
+</fieldset>
+<br>
+<fieldset>
+
+    <legend><b>Document Upload</b></legend>
+
+    <label>Passport Size Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required>
+
+    <br><br>
+
+    <label>CNIC / B-Form:</label>
+    <input type="file" id="cnic" name="cnic" accept=".pdf,.jpg,.png" required>
+
+    <br><br>
+
+    <label>Matric Certificate:</label>
+    <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.png" required>
+    <br><br>
+    <label>Inter Certificate:</label>
+    <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.png" required>
+
+</fieldset>
+<br>
+<footer>
+<fieldset>
+
+    <legend><b>Declaration</b></legend>
+
+    <input type="checkbox" id="agree" name="agree" required>
+
+    <label>
+        I declare that all the information provided is true and correct.
+    </label>
+
+
+</fieldset>
+<br>
+<div class="button">
+    <button type="button">submit application</button>
+</div>
+
+</footer>
+</form>
+  
+
+
+
+
+</body>
+</html>
