@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Admisssion Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         
-        <img src="BZU-Multan.png" alt="University Logo" width="120">
+       <div class="logo">
+         <img src="BZU-Multan.png" alt="University Logo" width="120" >
+     </div>
         <h1>Bahauddin Zakariya University</h1>
         <h2>University Admission form</h2>
     <p><strong> Please fill in the application form carefully.</strong></p>
     </header>
     <form>
   <fieldset>
-       <legend>Personal Information</legend>
+       <legend><b>Personal Information</b></legend>
        <label>Full Name:</label>
         <input type="text" id="fullname" name="fullname" required>
 
@@ -48,9 +51,10 @@
                required>
 
     </fieldset>
+    <br>
 <fieldset>
 
-    <legend>Contact Information</legend>
+    <legend><b>Contact Information</b></legend>
 
     <label>Address:</label><br>
     <textarea id="address" name="address" rows="4" cols="30" required></textarea>
@@ -70,9 +74,10 @@
     </datalist>
 
 </fieldset>
+<br>
 <fieldset>
 
-    <legend>Academic Information</legend>
+    <legend><b>Academic Information</b></legend>
 
     <label>Select Program:</label>
 
@@ -96,9 +101,10 @@
     <input type="number" id="marks" name="marks" min="0" max="100" required>
 
 </fieldset>
+<br>
 <fieldset>
 
-    <legend>Document Upload</legend>
+    <legend><b>Document Upload</b></legend>
 
     <label>Passport Size Photo:</label>
     <input type="file" id="photo" name="photo" accept="image/*" required>
@@ -117,10 +123,11 @@
     <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.png" required>
 
 </fieldset>
+<br>
 <footer>
 <fieldset>
 
-    <legend>Declaration</legend>
+    <legend><b>Declaration</b></legend>
 
     <input type="checkbox" id="agree" name="agree" required>
 
@@ -130,10 +137,11 @@
 
 
 </fieldset>
-
 <br>
+<div class="button">
+    <button type="button">submit application</button>
+</div>
 
-<input type="submit" value="Submit Application">
 </footer>
 </form>
   
