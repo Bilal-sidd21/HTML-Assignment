@@ -1,0 +1,15 @@
+h1{
+    font-size: large;
+    text-align: center;
+
+}
+fieldset{
+    text-align: center;
+}
+button:hover{
+    background-color:wheat;
+
+}
+h1{
+    height: -100vh;
+}
